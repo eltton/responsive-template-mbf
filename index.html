@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elton Pereira - Developer</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Elton<span>Pereira</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Inicio</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Planos</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contato</a></li>
+                    <li class="go-premium-cta"><a href="#">Clientes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">Venda mais!</p>
+                <h1>Sua Empresa na internet!</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Solicite um orçamento</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="Watch a video">Assita!
+                    </a>
+                </div>
+            </div>
+
+            <img src="images/undraw_App_wireframe_re_d467.svg" class="hero-img" alt="Illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Criação de Sites</li>
+                <li>Marketing Digital</li>
+                <li>Consultoria</li>
+                <li>Identidade Visual</li>
+                <li>E-commerce</li>
+                <li>Hospedagem</li>
+            </ul>
+
+            <img src="images/undraw_Success_factors_re_ce93.svg" alt="Man holding phone">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/mebg.jpg" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore"</blockquote>
+                    <cite>- Elton Pereira</cite>
+                </li>
+                <li>
+                    <img src="images/mebg.jpg" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore"</blockquote>
+                    <cite>- Elton Pereira</cite>
+                </li>
+                <li>
+                    <img src="images/mebg.jpg" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore"</blockquote>
+                    <cite>- Elton Pereira</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Mensagem</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Enviar">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48661.66042501163!2d-53.513991183484414!3d-24.972933660834666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d403ef80985f%3A0x8c3e2afe97327633!2sR.%20Mal.%20Floriano%2C%203396%20-%20Claudete%2C%20Cascavel%20-%20PR%2C%2085810-190!5e0!3m2!1spt-BR!2sbr!4v1612739719620!5m2!1spt-BR!2sbr"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>
